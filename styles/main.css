@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: darkgrey; }
+
+.general {
+  background-color: lightcyan;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; }
+
+.center {
+  background-color: cadetblue;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 3px);
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%; }
+
+.sec-hand {
+  background-color: lightslategray;
+  border-radius: 10px;
+  width: 5px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: time-animate 60s linear infinite;
+          animation: time-animate 60s linear infinite; }
+
+.min-hand {
+  border-radius: 10px;
+  background-color: teal;
+  width: 5px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: time-animate 3600s linear infinite;
+          animation: time-animate 3600s linear infinite; }
+
+@-webkit-keyframes time-animate {
+  from {
+    transform: rotate(180deg);
+    transform-origin: 50% 0; }
+  to {
+    transform: rotate(539deg);
+    transform-origin: 50% 0; } }
+
+@keyframes time-animate {
+  from {
+    transform: rotate(180deg);
+    transform-origin: 50% 0; }
+  to {
+    transform: rotate(539deg);
+    transform-origin: 50% 0; } }
+
+/*# sourceMappingURL=main.css.map */
